@@ -20,6 +20,4 @@ RUN apt-get update \
     && zip -g /tmp/deployment.zip main.py \
     && ls -lt \
     && pwd \
-    && ls -lt /tmp \
-
-    # CMD ["aws s3 cp /tmp/deployment.zip s3://dms-target-185455904055381/deployment.zip"]
+    && ls -lt /tmp 
